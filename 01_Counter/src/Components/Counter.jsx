@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "./Counter.css";
 
 const Counter = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = setCount(0);
 
   const increment = () => {
-    if (count < 20) {
+    if (count > 20) {
       setCount(count + 1);
     }
   };
