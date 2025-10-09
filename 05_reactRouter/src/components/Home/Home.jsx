@@ -31,7 +31,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* 🖼 Full-screen hero image */}
         <div className="absolute inset-0 w-full h-full">
           <img
             className="w-full h-full object-cover opacity-90"
@@ -41,7 +40,6 @@ export default function Home() {
         </div>
       </aside>
 
-      {/* 🖼 Optional second image centered below */}
       <div className="grid place-items-center sm:mt-20">
         <img
           className="w-full sm:w-3/4 max-w-5xl rounded-lg shadow-lg object-cover"
