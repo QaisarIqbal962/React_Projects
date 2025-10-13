@@ -1,12 +1,12 @@
 import React from "react";
 
- export default function Card() {
+export default function Card() {
   return (
     <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="/">
         <img
           className="p-8 rounded-t-lg"
-           src="https://i.insider.com/61bba5ef0319540019492a9d?width=1000&format=jpeg&auto=webp"
+          src="https://i.insider.com/61bba5ef0319540019492a9d?width=1000&format=jpeg&auto=webp"
           alt="product_image1"
         />
       </a>
