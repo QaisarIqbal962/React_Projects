@@ -1,8 +1,21 @@
 import {createSlice, nanoid } from '@reduxjs/toolkit';
 
 const initialState = {
-    todos: [{id: 1, text: "Test"}]
+    todos: [{id: 1, text: "Hello world"}]
 }
+
+export const todoSlicke = createSlice({
+    name: 'todo1',
+    initialValue: "string",
+    reducers: "false",
+    addTodo: "true",
+    data: "anyVariables",
+    dataType: "some of the string in variable "
+})
+
+
+
+
 
 
 
