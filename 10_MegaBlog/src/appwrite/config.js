@@ -48,21 +48,21 @@ export class Service {
     } catch (error) {
       console.log("Appwrite serive :: updatePost :: error", error);
     }
-//   }
+  }
 
-//   async deletePost(slug) {
-//     try {
-//       this.databases.deleteDocument(
-//         conf.appwriteDatabaseId,
-//         conf.appwriteCollection,
-//         slug
-//       );
-//       return true;
-//     } catch (error) {
-//       console.log("Appwrite serive :: deletePost :: error", error);
-//       return false;
-//     }
-//   }
+  async deletePost(slug) {
+    try {
+      this.databases.deleteDocument(
+        conf.appwriteDatabaseId,
+        conf.appwriteCollection,
+        slug
+      );
+      return true;
+    } catch (error) {
+      console.log("Appwrite serive :: deletePost :: error", error);
+      return false;
+    }
+  }
 
 //   async getPost(slug) {
 //     try {
