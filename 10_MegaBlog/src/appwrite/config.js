@@ -64,18 +64,18 @@ export class Service {
     }
   }
 
-//   async getPost(slug) {
-//     try {
-//       return await this.databases.getDocument(
-//         conf.appwriteDatabaseId,
-//         conf.appwriteCollection,
-//         slug
-//       );
-//     } catch (error) {
-//       console.log("Appwrite serive :: getPost :: error", error);
-//       return false;
-//     }
-//   }
+  async getPost(slug) {
+    try {
+      return await this.databases.getDocument(
+        conf.appwriteDatabaseId,
+        conf.appwriteCollection,
+        slug
+      );
+    } catch (error) {
+      console.log("Appwrite serive :: getPost :: error", error);
+      return false;
+    }
+  }
 }
 
 const serive = new Service();
