@@ -11,7 +11,7 @@ export default function About() {
                             alt="image"
                         />
                     </div>
-                    <div className="md:7/12 lg:w-6/12">
+                    {/* <div className="md:7/12 lg:w-6/12">
                         <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
                             React development is carried out by passionate developers
                         </h2>
@@ -24,7 +24,7 @@ export default function About() {
                             Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
                             Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.
                         </p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
