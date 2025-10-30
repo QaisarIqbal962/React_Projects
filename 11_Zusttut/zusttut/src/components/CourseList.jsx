@@ -3,17 +3,17 @@ import useCourseStore from '../app/courseStore'
 
 
 const CourseList = () => {
-  
-
-
     const {courses, removeCourse, toggleCourseStatus} = useCourseStore(
         (state) => ({
             courses: state.courses,
             removeCourse: state.removeCourse,
-            toogleCourseStatus: state.toggleCourseStatus
+            toggleCourseStatus: state.toggleCourseStatus
         })
-        
     )
+
+
+        
+    
   return (
     <>
     <ul>
