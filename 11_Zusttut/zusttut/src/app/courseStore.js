@@ -1,6 +1,5 @@
 import { create } from "zustand";
-import { devtools } from "zustand/middleware/devtools";
-import { persist } from "zustand/middleware/persist";
+import { devtools, persist } from "zustand/middleware";
 
 const courseStore = (set) => ({
   courses: [],
