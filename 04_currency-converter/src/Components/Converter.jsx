@@ -57,40 +57,7 @@ const Converter = () => {
           />  
         </div>  
         
-        <div className="flex items-center mb-5">  
-          <select  
-            value={selectedCurrency}  
-            onChange={(e) => setSelectedCurrency(e.target.value)}  
-            className="border border-gray-300 p-4 rounded-lg w-full mr-2 focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-300 transition duration-300"  
-          >  
-            {currencies.map((currency) => (  
-              <option key={currency} value={currency}>  
-                {currency}  
-              </option>  
-            ))}  
-          </select>  
-
-          <button onClick={handleSwap}></button>
-          
-          <button   
-            onClick={handleSwap}  
-            className="bg-yellow-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-yellow-600 transition duration-300 transform hover:scale-105"  
-          >  
-            Swap  
-          </button>  
-          
-          <select  
-            value={reverseCurrency}  
-            onChange={(e) => setReverseCurrency(e.target.value)}  
-            className="border border-gray-300 p-4 rounded-lg w-full ml-2 focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-300 transition duration-300"  
-          >  
-            {currencies.map((currency) => (  
-              <option key={currency} value={currency}>  
-                {currency}  
-              </option>  
-            ))}  
-          </select>  
-        </div>  
+        
         
         <div className="text-xl font-bold text-gray-700 mb-4">Converted Amount</div>  
         <div className="text-2xl font-semibold text-blue-500 mb-4">  
