@@ -15,7 +15,7 @@ const CourseList = () => {
           key={course.id}
           className="course-item"
           style={{
-            backgroundColor: "white", 
+            backgroundColor: "white",
             display: "flex",
             alignItems: "center",
             gap: "10px",
@@ -23,14 +23,14 @@ const CourseList = () => {
             borderBottom: "1px solid #ccc",
           }}
         >
-          <input 
+          <input
             checked={course.completed}
             type="checkbox"
             onChange={() => toggleCourseStatus(course.id)}
           />
           <span
             style={{
-              textDecoration: course.completed ? "line-through" : "none", 
+              textDecoration: course.completed ? "line-through" : "none",
             }}
           >
             {course?.title}
@@ -50,6 +50,8 @@ const CourseList = () => {
           >
             Delete
           </button>
+
+         
         </li>
       ))}
     </ul>
