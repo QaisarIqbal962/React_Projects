@@ -69,6 +69,8 @@ const Converter = () => {
               </option>  
             ))}  
           </select>  
+
+          <button onClick={handleSwap}></button>
           
           <button   
             onClick={handleSwap}  

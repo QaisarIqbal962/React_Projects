@@ -1,7 +1,11 @@
 import { useState } from "react";
+import axios from "axios";
+
 
 function App() {
-const Getdata = ()=> {
+const Getdata = async()=> {
+  const response = await axios.get("https://picsum.photos/v2/list")
+  console.log(response)
  
 
 }
