@@ -2,12 +2,11 @@ import axios from "axios";
 import { useState } from "react";
 
 function App() {
-
- const [data, setData] = useState([])
+  const [data, setData] = useState([]);
   const Getdata = async () => {
     const response = await axios.get("https://picsum.photos/v2/list");
     setData(response.data);
-    console.log(data)
+    console.log(data);
   };
   return (
     <>
@@ -19,13 +18,17 @@ function App() {
           Get Data
         </button>
         <div className="p-5 mt-5 bg-gray-950 text-white">
-          {data.map((elem,idx)=> {
-            return  <div className="bg-gray-50 text-black flex"></div>
-           
-
-
+          {data.map((elem, idx) => {
+            return (
+              <div key={idx} className="bg-gray-50 text-black  flex items-center justify-between w-full px-7 py-6 rounded mb-3">
+                
+              </div>
+            );
           })}
         </div>
+
+     
+
       </div>
     </>
   );
