@@ -71,18 +71,7 @@ const Converter = () => {
           />
         </div>
 
-        <div className="flex items-center mb-5">
-          <select
-            value={selectedCurrency}
-            onChange={(e) => setSelectedCurrency(e.target.value)}
-            className="border border-gray-300 p-4 rounded-lg w-full mr-2 focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-300 transition duration-300"
-          >
-            {currencies.map((currency) => (
-              <option key={currency} value={currency}>
-                {currency}
-              </option>
-            ))}
-          </select>
+        
 
           <button onClick={handleSwap}></button>
 
