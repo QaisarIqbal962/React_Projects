@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0">
-      <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <div className="mt-8 overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="p-6 mr-2 bg-gray-100 sm:rounded-lg">
+    <div className="relative flex items-top justify-center min-h-[500px] sm:min-h-[600px] bg-white sm:items-center py-8 sm:py-12">
+      <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+        <div className="mt-4 sm:mt-8 overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div className="p-4 sm:p-6 md:mr-0 bg-gray-100 rounded-lg">
               <h1 className="text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight">
                 Get in touch:
               </h1>
@@ -91,7 +91,7 @@ export default function Contact() {
             </div>
 
             {/* Contact Form */}
-            <form className="p-6 flex flex-col justify-center">
+            <form className="p-4 sm:p-6 flex flex-col justify-center">
               <div className="flex flex-col">
                 <label htmlFor="name" className="hidden">
                   Full Name
@@ -101,7 +101,7 @@ export default function Contact() {
                   name="name"
                   id="name"
                   placeholder="Full Name"
-                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                  className="w-full mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-200"
                 />
               </div>
 
@@ -114,7 +114,7 @@ export default function Contact() {
                   name="email"
                   id="email"
                   placeholder="Email"
-                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                  className="w-full mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-200"
                 />
               </div>
 
@@ -127,7 +127,7 @@ export default function Contact() {
                   name="tel"
                   id="tel"
                   placeholder="Telephone Number"
-                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                  className="w-full mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-200"
                 />
               </div>
 

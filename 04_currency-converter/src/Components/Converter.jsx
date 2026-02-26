@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+ import React, { useEffect, useState } from "react";
 
 const Converter = () => {
   const [amount, setAmount] = useState(1); // Amount in selected currency

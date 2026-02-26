@@ -3,19 +3,19 @@ import {Link} from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-y">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between">
+    <footer className="site-footer bg-white border-y mt-auto">
+      <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 py-6 lg:py-8">
+        <div className="md:flex md:justify-between md:items-start gap-6">
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
               <img
                 src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-                className="mr-3 h-16"
+                className="mr-3 h-12 sm:h-16"
                 alt="Logo"
               />
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
                 Resources
@@ -75,15 +75,15 @@ export default function Footer() {
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between text-center sm:text-left">
+          <span className="text-sm text-gray-500">
             © 2023
-            <a href="https://hiteshchoudhary.com/" className="hover:underline">
-              hiteshchoudhary
+            <a href="https://github.com/QaisarIqbal962" className="hover:underline">
+              Qaisar Iqbal
             </a>
             . All Rights Reserved.
           </span>
-          <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+          <div className="flex justify-center sm:justify-end mt-4 space-x-5 sm:mt-0">
             <Link to="#" className="text-gray-500 hover:text-gray-900">
               <svg
                 className="w-4 h-4"
