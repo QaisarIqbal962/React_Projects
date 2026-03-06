@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const navLinkClass = ({ isActive }) =>
   `block py-3 px-1 text-[15px] font-medium tracking-tight transition-colors duration-200 rounded-lg lg:py-0 lg:px-0 lg:rounded-none ${
-    isActive ? "text-[#018673] font-semibold" : "text-[#018673]"
+    isActive ? "text-[#018673] font-semibold active-link" : "text-[#018673]"
   } border-b border-gray-100 hover:bg-[#e6f7f3] lg:hover:bg-transparent lg:border-0 hover:text-[#016a5c]`;
 
 function Header() {
@@ -61,6 +61,12 @@ function Header() {
               <li>
                 <NavLink to="/contact" className={navLinkClass} onClick={() => setMobileMenuOpen(false)}>
                   Contact
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/github" className={navLinkClass} onClick={() => setMobileMenuOpen(false)}>
+                  Github
                 </NavLink>
               </li>
             </ul>

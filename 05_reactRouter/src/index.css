@@ -44,6 +44,10 @@ a:hover {
 .header-nav-links a:hover::after {
   width: 100%;
 }
+/* Active link shows underline like hover */
+.header-nav-links .active-link::after {
+  width: 100%;
+}
 /* Mobile: keep pill background hover; hide underline (handled by rounded bg) */
 @media (max-width: 1023px) {
   .header-nav-links a::after {

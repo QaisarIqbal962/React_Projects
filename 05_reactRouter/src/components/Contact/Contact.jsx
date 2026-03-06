@@ -6,16 +6,16 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div className="mt-4 sm:mt-8 overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            <div className="p-4 sm:p-6 md:mr-0 bg-gray-100 rounded-lg">
-              <h1 className="text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight">
+            <div className="p-4 sm:p-6 md:mr-0 bg-[#018673] rounded-tr-3xl rounded-bl-3xl   ">
+              <h1 className="text-3xl sm:text-4xl text-white font-extrabold tracking-tight">
                 Get in touch:
               </h1>
-              <p className="text-normal text-lg sm:text-xl font-medium text-gray-600 mt-2">
+              <p className="text-normal text-lg sm:text-xl font-medium text-white mt-2">
                 Fill in the form to start a conversation
               </p>
 
               {/* Address */}
-              <div className="flex items-center mt-8 text-gray-600">
+              <div className="flex items-center mt-8 text-white">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -23,7 +23,7 @@ export default function Contact() {
                   strokeLinejoin="round"
                   strokeWidth="1.5"
                   viewBox="0 0 24 24"
-                  className="w-8 h-8 text-gray-500"
+                  className="w-8 h-8 text-white"
                 >
                   <path
                     strokeLinecap="round"
@@ -52,7 +52,7 @@ export default function Contact() {
                   strokeLinejoin="round"
                   strokeWidth="1.5"
                   viewBox="0 0 24 24"
-                  className="w-8 h-8 text-gray-500"
+                  className="w-8 h-8 text-white"
                 >
                   <path
                     strokeLinecap="round"
@@ -61,7 +61,7 @@ export default function Contact() {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <div className="ml-4 text-md tracking-wide font-semibold w-40">
+                <div className="ml-4 text-md tracking-wide text-white font-semibold w-40">
                   +44 1234567890
                 </div>
               </div>
@@ -75,7 +75,7 @@ export default function Contact() {
                   strokeLinejoin="round"
                   strokeWidth="1.5"
                   viewBox="0 0 24 24"
-                  className="w-8 h-8 text-gray-500"
+                  className="w-8 h-8 text-white"
                 >
                   <path
                     strokeLinecap="round"
@@ -84,7 +84,7 @@ export default function Contact() {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <div className="ml-4 text-md tracking-wide font-semibold w-40">
+                <div className="ml-4 text-md tracking-wide text-white font-semibold w-40">
                   info@acme.org
                 </div>
               </div>
