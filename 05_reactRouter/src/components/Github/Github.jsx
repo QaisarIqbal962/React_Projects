@@ -42,17 +42,20 @@ const Github = () => {
 
   return (
     <div>
-    <div className='flex items-center justify-center gap-4 m-4 bg-gray-600 text-white p-4 rounded-xl shadow-lg'>
+<div className="flex items-center justify-center gap-4 m-4 p-4 rounded-full shadow-sm text-gray-800 bg-gradient-to-b from-[#016A5C]/50 to-white">
       
       <img
         src={data.avatar_url}
         alt="profile"
-        className="w-12 h-12 rounded-full border-2 border-[#016A5C"
+        className="w-18 h-18 rounded-full border-2 border-[#016A5C"
       />
+      
 
-      <p className='text-xl font-semibold'>
+      <p className='text-xl font-semibold text-center'>
         Github Followers: {data.followers}
+        
       </p>
+      <p className='text-xl text-center'>Following: {data.following}</p>
       
 
     </div>
