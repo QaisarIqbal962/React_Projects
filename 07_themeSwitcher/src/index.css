@@ -1,5 +1,8 @@
+
 @import "tailwindcss";
 
+/* Use class-based dark mode so toggle controls dark: styles */
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
