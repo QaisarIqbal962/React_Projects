@@ -22,7 +22,11 @@ function App() {
      document.querySelector("html").classList.add(themeMode)
     
   }, [themeMode])
-  
+
+  // useEffect(() => {
+  //   document.querySelector("html").classList.add(themeMode)
+  //   document.querySelector("html").classList.remove(themeMode === "light" ? "dark" : "light")
+  // }, [themeMode])
 
   return (
     <ThemeProvider value={{themeMode, darkTheme, lightTheme}}>
