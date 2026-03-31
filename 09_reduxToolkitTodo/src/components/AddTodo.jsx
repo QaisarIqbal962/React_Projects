@@ -10,7 +10,7 @@ function AddTodo({ input, setInput, onSubmit, isEditing }) {
       />
       <button
         type="submit"
-        className="h-11 rounded-xl border border-indigo-200/40 bg-indigo-500/80 px-6 text-sm font-semibold text-white shadow-lg shadow-indigo-950/30 transition hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-300/35"
+        className="h-11 rounded-xl border border-indigo-200/40 bg-indigo-500/80 cursor-pointer px-6 text-sm font-semibold text-white shadow-lg shadow-indigo-950/30 transition hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-300/35"
       >
         {isEditing ? 'Update Task' : 'Add Task'}
       </button>

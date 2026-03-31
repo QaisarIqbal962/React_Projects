@@ -25,14 +25,14 @@ function Todos({ onEdit, onDelete, editingTodoId }) {
             <div className="flex items-center gap-2">
               <button
                 onClick={() => onEdit(todo)}
-                className="rounded-lg border border-amber-100/35 bg-amber-500/85 px-3 py-2 text-white transition hover:bg-amber-500 focus:outline-none focus:ring-4 focus:ring-amber-300/35"
+                className="rounded-lg border border-amber-100/35 cursor-pointer bg-amber-500/85 px-3 py-2 text-white transition hover:bg-amber-500 focus:outline-none focus :ring-4 focus:ring-amber-300/35"
                 aria-label={`Edit ${todo.text}`}
               >
                 Edit
               </button>
               <button
                 onClick={() => onDelete(todo.id)}
-                className="rounded-lg border border-rose-100/35 bg-rose-500/85 px-3 py-2 text-white transition hover:bg-rose-500 focus:outline-none focus:ring-4 focus:ring-rose-300/35"
+                className="rounded-lg border border-rose-100/35 bg-rose-500/85 cursor-pointer px-3 py-2 text-white transition hover:bg-rose-500 focus:outline-none focus:ring-4 focus:ring-rose-300/35"
                 aria-label={`Delete ${todo.text}`}
               >
                 Delete
