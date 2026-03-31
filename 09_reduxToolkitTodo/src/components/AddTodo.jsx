@@ -1,32 +1,18 @@
-import React, {useState} from 'react'
-import {useDispatch} from 'react-redux'
-import {addTodo} from '../features/todo/todoSlice' 
-
-function AddTodo() {
-
-    const [input, setInput] = useState('')
-    const dispatch = useDispatch()
-
-    const addTodoHandler = (e) => {
-        e.preventDefault()
-        dispatch(addTodo(input))
-        setInput('')
-    }
-
+function AddTodo({ input, setInput, onSubmit, isEditing }) {
   return (
-    <form onSubmit={addTodoHandler} className="space-x-3 mt-12">
+    <form onSubmit={onSubmit} className="mb-6 flex flex-col gap-3 sm:flex-row">
       <input
         type="text"
-        className="bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-        placeholder="Enter a Todo..."
+        className="h-11 w-full rounded-xl border border-white/30 bg-white/15 px-4 text-slate-100 placeholder:text-slate-300/70 outline-none backdrop-blur-md transition focus:border-indigo-300 focus:ring-4 focus:ring-indigo-300/30"
+        placeholder="What needs to be done?"
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
       <button
         type="submit"
-        className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+        className="h-11 rounded-xl border border-indigo-200/40 bg-indigo-500/80 px-6 text-sm font-semibold text-white shadow-lg shadow-indigo-950/30 transition hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-300/35"
       >
-        Add Todo
+        {isEditing ? 'Update Task' : 'Add Task'}
       </button>
     </form>
   )
